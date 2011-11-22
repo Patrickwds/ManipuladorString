@@ -22,4 +22,10 @@ public class TestManipuladorDeString {
 		String fraseFormatada = ManipuladorDeString.ordenar("A Maria compro pao na casa do Joao.");
 		assertEquals("A na do pao casa Maria Joao. compro", fraseFormatada);
 	}
+	
+	@Test
+	public void manipularStringDoComecoGrande() {
+		String fraseFormatada = ManipuladorDeString.ordenar("Carmelita Maria compro pao na casa do Joao.");
+		assertEquals("na do pao casa Maria Joao. compro Carmelita", fraseFormatada);
+	}
 }
